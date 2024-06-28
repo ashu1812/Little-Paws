@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./css/signup.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+
+    <!-- thumbnail -->
+    <link rel="icon" type ="image/svg" href="images/icon.svg">
+
+</head>
+<body>
+
+    <a href="index.html"><img class="logo" src="images/logo_final.png" alt=""></a>
+
+    <form autocomplete="off" action="connect.php" method="post">
+        <h3>Welcome!</h3>
+
+        <label for="Name">Parent Name</label>
+        <input type="text" placeholder="Name" id="Name" name = "Name" required>
+
+        <label for="BName">Pet Name</label>
+        <input type="text" placeholder="Pet Name" id="BName" name = "BName" required>
+
+        <label class="container">Cat
+          <input type="radio" name="Buddy" value = "c"  checked="checked" id = "Buddy">
+          <span class="checkmark"></span>
+        </label>
+
+        <label class="container">Dog
+          <input type="radio" name="Buddy" value = "d" id = "Buddy">
+          <span class="checkmark"></span> 
+        </label>
+
+        <label for="Email ID"><br><br>Email</label>
+        <input type="email" placeholder="Email" id="email" name = "email" required>
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password" name = "password" required>
+
+
+        <br>
+        <input class = "button" type="submit" name="Submit" id="Submit" value="Submit">
+
+
+    </form>
+</body>
+</html>
